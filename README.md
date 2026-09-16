@@ -12,8 +12,8 @@ The sequence treats an agent as a system you can inspect: a model chooses an act
 | 2 | [Reliable Tool-Use Agent](projects/02-tool-use-agent.md) | Structured outputs, 1–3 tools, failure handling | 2 | 7–9 | Solo | Project 1 |
 | 3 | [Stateful Knowledge Agent](projects/03-memory-and-rag-agent.md) | Turn state, memory, and local-document RAG | 3 | 12–16 | Solo | Projects 1–2 |
 | 4 | [Measure What Matters: Agent Evals](projects/04-agent-evals.md) | Task success, regression tests, cost, and latency | 3 | 10–14 | Solo | Projects 2–3 |
-| 5 | [Research Brief Studio `[GROUP]`](projects/05-multi-agent-system-%5BGROUP%5D.md) | Specialist agents, handoffs, and synthesis | 4 | 20–26 per team member | Group (3–4) | Projects 3–4 |
-| 6 | [Human-in-the-Loop Operations Orchestrator `[GROUP]`](projects/06-orchestration-project-%5BGROUP%5D.md) | Planning, orchestration, approval gates, recovery | 5 | 24–32 per team member | Group (3–4) | Projects 4–5 |
+| 5 | [Research Brief Studio](projects/05-multi-agent-system-%5BGROUP%5D.md) **[GROUP]** | Specialist agents, handoffs, and synthesis | 4 | 20–26 per team member | Group (3–4) | Projects 3–4 |
+| 6 | [Human-in-the-Loop Operations Orchestrator](projects/06-orchestration-project-%5BGROUP%5D.md) **[GROUP]** | Planning, orchestration, approval gates, recovery | 5 | 24–32 per team member | Group (3–4) | Projects 4–5 |
 | 7 | [Production Agent Capstone](projects/07-capstone.md) | Real-world product, deployment, evidence, reflection | 5 | 35–50 | Solo | Projects 1–6 |
 
 ## Course-wide policies
@@ -31,4 +31,3 @@ The sequence treats an agent as a system you can inspect: a model chooses an act
 Unless a project says otherwise, submit one repository URL and a release or commit hash representing the graded version. Your repository should run from a fresh clone by following its README. Include sample inputs, automated tests, and sanitized artifacts that let a grader verify behavior without access to private data.
 
 Start every assignment from [`templates/project-spec-template.md`](templates/project-spec-template.md) when proposing a variation. Rubrics share the categories and performance language in [`templates/grading-rubric-template.md`](templates/grading-rubric-template.md). Instructor-facing calibration notes are in [`instructor-notes/grading-guidance.md`](instructor-notes/grading-guidance.md).
-
