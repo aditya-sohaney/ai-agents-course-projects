@@ -1,4 +1,4 @@
-# Project 5 — Research Brief Studio `[GROUP]`
+# Project 6 — Research Brief Studio `[GROUP]`
 
 > **One-line pitch:** As a team, build a small system of specialist agents that turns a document packet into a cited research brief—and prove that the extra agents earn their complexity.
 
@@ -14,7 +14,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Projects 3 and 4: local-document RAG, state, trace logging, labeled evals, and regression metrics.
+- Completed Projects 4 and 5: local-document RAG, state, trace logging, labeled evals, and regression metrics.
 - Teams of three or four with a shared Git workflow and issue board.
 - A model-provider API key per team or an instructor-provided key with a strict budget. No paid search, vector database, or hosting service is required.
 
@@ -93,4 +93,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$1.50–$4.50 per team**. This assumes one 20-case baseline run, one multi-agent run, limited development sampling, short evidence excerpts, and strict call/output caps on a low-cost model. Share a team ledger, cache every completed role artifact, stop automatically at **$4.50**, and use replay mode for integration tests. The assignment must remain below approximately **$5 total per team**.
-

@@ -1,4 +1,4 @@
-# Project 6 — Human-in-the-Loop Operations Orchestrator `[GROUP]`
+# Project 7 — Human-in-the-Loop Operations Orchestrator `[GROUP]`
 
 > **One-line pitch:** Build a resumable service-desk workflow that plans work, delegates bounded tasks, and pauses for human approval before any consequential action.
 
@@ -14,7 +14,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Projects 4 and 5: evaluation gates, multi-agent roles, structured handoffs, and observability.
+- Completed Projects 5 and 6: evaluation gates, multi-agent roles, structured handoffs, and observability.
 - Teams of three or four comfortable with SQLite, state machines, test doubles, and GitHub pull requests.
 - A model-provider API key per team. All service-desk systems and side effects in this assignment are simulated locally.
 
@@ -92,4 +92,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$1.50–$4.50 per team**. This assumes bounded plans, one required 24-scenario live run, cached role outputs, and a low-cost text model; all retry and restart tests should use fixtures. Maintain a shared ledger, cap per-run model calls, and stop automatically at **$4.50**. The assignment must remain below approximately **$5 total per team**.
-

@@ -6,6 +6,8 @@ Solo projects use **40% functionality, 20% code quality, 25% evals/testing, and 
 
 Grade system behavior and evidence, not provider or framework choice. A small, understandable implementation with strong measurements should outscore a complicated graph whose success is supported only by a curated demo.
 
+Projects 1–4 intentionally use raw provider SDK calls: Project 1 establishes messages, history, prompting, tokens, and cost before Projects 2–4 add tools, reliability, memory, and retrieval. Frameworks become optional in Projects 5–8. When grading Project 2, assume students already know the API and message basics from Project 1; focus feedback on the new action/observation loop.
+
 ## Fast, consistent grading workflow
 
 1. **Triage in five minutes:** confirm the submitted commit, scan the README, check for committed secrets, and identify the single documented run command.
@@ -20,6 +22,8 @@ Ask students to include cached example traces with secrets and personal data rem
 
 | Failure mode | What to inspect | Grading response |
 |---|---|---|
+| Chat history is not actually resent | In Project 1, inspect the messages supplied on turn two and the history-cap behavior. | Deduct functionality where prior turns are unavailable or the system message is trimmed. |
+| Token cost is hard-coded or misleading | Inspect usage metadata, configurable prices, session totals, and the “estimate” label. | Deduct functionality or documentation according to whether the calculation or explanation is wrong. |
 | A chatbot is labeled an agent | Look for model-selected actions, tool execution, observations, and a termination condition. | Deduct functionality where the required loop is absent. |
 | Tool arguments are parsed from prose | Inspect JSON schema validation and malformed-input tests. | Deduct code quality and testing according to impact. |
 | The loop can run forever | Look for iteration, token, time, and cost limits. | Treat as a material functionality and safety defect. |
@@ -47,4 +51,3 @@ Never require a paid vector database, observability vendor, or hosting plan. Loc
 ## Academic integrity and responsible use
 
 Require attribution for borrowed code, prompts, datasets, and generated assets. A student must be able to explain their state model, tool contract, evaluation labels, and failure-handling decisions. Escalate exposed credentials or unauthorized personal data immediately and ask the student to revoke or remove access according to institutional policy; do not copy secrets into feedback.
-

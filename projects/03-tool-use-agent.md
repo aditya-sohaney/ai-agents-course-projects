@@ -1,4 +1,4 @@
-# Project 2 — Reliable Tool-Use Agent
+# Project 3 — Reliable Tool-Use Agent
 
 > **One-line pitch:** Turn the tiny loop into a dependable single agent that chooses among a few local tools and fails clearly when a tool cannot complete its job.
 
@@ -13,7 +13,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Project 1 or can independently implement its raw-SDK agent loop.
+- Completed Project 2 or can independently implement its raw-SDK tool-calling loop.
 - Familiarity with Python type hints, exceptions, JSON, and `pytest` fixtures or mocks.
 - A model-provider API key. No database or external paid service is required.
 
@@ -84,4 +84,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$0.10–$0.75**. This assumes roughly 60 short development calls and one six-case live acceptance run using a low-cost text model. Track returned token usage and latency per call, impose output and loop caps, and set a **$2 project alert**. The assignment must remain below approximately **$5**.
-

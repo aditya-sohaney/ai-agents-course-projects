@@ -1,4 +1,4 @@
-# Project 7 — Production Agent Capstone
+# Project 8 — Production Agent Capstone
 
 > **One-line pitch:** Design, evaluate, and ship an agent product that solves a real approved problem and is strong enough to discuss in a portfolio or technical interview.
 
@@ -14,7 +14,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Projects 1–6 or can demonstrate equivalent skill in tool use, state/RAG, evals, orchestration, and human approval.
+- Completed Projects 1–7 or can demonstrate equivalent skill in LLM APIs, tool use, state/RAG, evals, orchestration, and human approval.
 - An instructor-approved proposal, Python development environment, GitHub account, and model-provider API key.
 - Ability to use public, synthetic, or explicitly authorized data and to explain the data's provenance.
 
@@ -103,4 +103,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$2.00–$4.75**. This assumes a focused workflow, one 30-case final evaluation, a small repeated subset, two user sessions, and disciplined development on a low-cost model. Use cached fixtures, per-run call/token limits, a configurable dollar cutoff, and a provider spending alert at **$4.50**. If your proposed architecture cannot be demonstrated and evaluated below approximately **$5**, reduce scope or use more deterministic/local components before seeking approval.
-

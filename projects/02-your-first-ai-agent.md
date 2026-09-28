@@ -1,4 +1,4 @@
-# Project 1 — Your First AI Agent
+# Project 2 — Your First AI Agent
 
 > **One-line pitch:** Build the smallest useful agent: a raw model call in a visible loop that can choose one calculator tool, observe its result, and answer the user.
 
@@ -9,21 +9,21 @@ By the end of this project, you will be able to:
 - Trace the agent loop: **prompt → tool call → observation → response**.
 - Define one tool with a machine-readable input contract.
 - Execute a model-requested action in Python and return the observation to the model.
-- Bound an agent loop and explain why an ordinary chat completion is not automatically an agent.
+- Build on Project 1's conversation loop by adding model-selected actions and a termination condition.
 
 ## 2. Prerequisites
 
-- Comfortable writing and running a small Python program.
-- Basic functions, dictionaries, loops, exceptions, and command-line input.
-- Git and a model-provider API key. No previous agent or machine-learning experience is assumed.
+- Completed Project 1, including direct SDK calls, message roles, conversation history, safe API-key handling, and mocked tests.
+- Comfortable with Python functions, dictionaries, loops, exceptions, JSON, and command-line input.
+- A working model-provider API key and the same local development environment used in Project 1.
 
 ## 3. Background and context
 
-An agent is not magic and it is not defined by a framework. In this project, an agent is a model participating in a loop. The model receives a user request and a description of an available action. It may request that action, your Python code executes it, and the resulting observation goes back to the model so it can decide what to say next.
+In Project 1, you built a conversation loop by resending messages on each API call. An agent extends that loop with actions. The model receives a user request and a description of an available action. It may request that action, your Python code executes it, and the resulting observation goes back to the model so it can decide what to say next.
 
 The important boundary is between deciding and doing. The model may propose calculator arguments, but ordinary Python code validates and executes them. The result is then represented as a message rather than silently inserted into prose. Keeping those steps separate makes the system inspectable and testable.
 
-Even this tiny loop needs a stop condition. Models can repeat a request, produce invalid arguments, or answer without using a tool. You will cap the loop and print a compact trace so you can see every decision. The goal is understanding the mechanism, not hiding it behind abstractions.
+Unlike Project 1's open-ended chat loop, this task loop needs a completion condition and a small per-request call limit. Models can repeat a request, produce invalid arguments, or answer without using a tool. You will cap the loop and print a compact trace so you can see every decision. The goal is understanding the new action cycle, not revisiting API setup or basic message roles.
 
 ## 4. The task
 
@@ -84,4 +84,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$0.05–$0.50**. This assumes fewer than 40 short development calls, three final live acceptance cases, and a modest output-token cap on a low-cost text model. Mock the model in automated tests, log per-run usage when the SDK returns it, and set yourself a **$2 project alert**. The assignment must remain below approximately **$5**.
-

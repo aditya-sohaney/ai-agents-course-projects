@@ -1,4 +1,4 @@
-# Project 3 — Stateful Knowledge Agent
+# Project 4 — Stateful Knowledge Agent
 
 > **One-line pitch:** Build a raw-SDK assistant that remembers selected facts across turns and answers questions from a local document collection with verifiable citations.
 
@@ -13,7 +13,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Projects 1 and 2, including raw tool calls, schema validation, loop bounds, and failure observations.
+- Completed Projects 2 and 3, including raw tool calls, schema validation, loop bounds, and failure observations.
 - Familiarity with file I/O, SQLite or JSON persistence, and basic text processing.
 - A model-provider API key. You do not need a GPU, hosted vector database, or paid document service.
 
@@ -87,4 +87,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$0.25–$1.50**. This assumes up to 100 bounded development calls and one 15-case evaluation run with short retrieved contexts on a low-cost model; lexical retrieval adds no API cost. Log usage per case, cache ingestion, cap chunk count and output length, and set a **$3 project alert**. The assignment must remain below approximately **$5**.
-

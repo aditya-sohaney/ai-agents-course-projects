@@ -1,4 +1,4 @@
-# Project 4 — Measure What Matters: Agent Evals
+# Project 5 — Measure What Matters: Agent Evals
 
 > **One-line pitch:** Build a repeatable evaluation harness that tells you whether an agent improved, regressed, became slower, or became more expensive.
 
@@ -13,7 +13,7 @@ By the end of this project, you will be able to:
 
 ## 2. Prerequisites
 
-- Completed Project 2 or 3 and have a runnable agent with visible traces.
+- Completed Project 3 or 4 and have a runnable agent with visible traces.
 - Familiarity with `pytest`, JSONL, basic descriptive statistics, and command-line scripts.
 - Ability to mock provider responses and interpret token-usage metadata.
 
@@ -27,8 +27,8 @@ Evaluation is also a change-management practice. A fixed regression set tells yo
 
 ## 4. The task
 
-1. Select your Project 2 or Project 3 agent as the system under test. Preserve its current behavior as the **baseline**, then make one documented **candidate** change such as a prompt revision, tool-description revision, retrieval setting, or model choice.
-2. Create a versioned JSONL evaluation set with at least 30 cases divided into at least five named slices: normal success, ambiguous input, tool failure, adversarial or malformed input, and a domain-specific slice. Project 3 agents must also include grounded-answer and memory/privacy slices.
+1. Select your Project 3 or Project 4 agent as the system under test. Preserve its current behavior as the **baseline**, then make one documented **candidate** change such as a prompt revision, tool-description revision, retrieval setting, or model choice.
+2. Create a versioned JSONL evaluation set with at least 30 cases divided into at least five named slices: normal success, ambiguous input, tool failure, adversarial or malformed input, and a domain-specific slice. Project 4 agents must also include grounded-answer and memory/privacy slices.
 3. Give every case an ID, input, expected status, deterministic assertions, optional required/forbidden tools, tags, and a short label rationale. Keep at least five cases as a hidden-style holdout that you do not tune against until the end.
 4. Implement a provider-independent adapter that runs one case and returns a normalized record: final output, status, tool trace, error, model calls, input/output tokens when available, wall-clock latency, and estimated cost.
 5. Implement deterministic graders for schema validity, expected status, required/forbidden tool use, loop-limit compliance, and any exact domain outputs. Add a clearly defined rubric for criteria that need human review.
@@ -86,4 +86,3 @@ Stretch work does not replace required work and cannot raise a score above 100%.
 ## 10. Estimated API cost
 
 Expected model spend: **$0.75–$3.50**. This allows 60 baseline/candidate case runs, 60 repeated runs, and a modest development allowance on a low-cost model; omitting the optional model judge lowers cost. Estimate prices in configuration rather than hard-coding them in graders, log usage, stop runs at a user-defined dollar cap, and set a **$4 project alert**. The assignment must remain below approximately **$5**.
-
